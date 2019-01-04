@@ -45,7 +45,7 @@
 // the size of the store that you need.  This can be any multiple of 4kB up to
 // a maximum 256Kb.
 
-//#define LUA_FLASH_STORE 0x10000
+#define LUA_FLASH_STORE 0x10000
 
 
 // By default Lua executes the file init.lua at start up.  The following
@@ -110,8 +110,8 @@
 // firmware to manage timer rescheduling over sleeps (the CPU clock is
 // suspended so timers get out of sync) then enable the following options
 
-//#define TIMER_SUSPEND_ENABLE
-//#define PMSLEEP_ENABLE
+#define TIMER_SUSPEND_ENABLE
+#define PMSLEEP_ENABLE
 
 
 // The WiFi module optionally offers an enhanced level of WiFi connection
@@ -122,7 +122,7 @@
 // further details, as the scope of these changes is not obvious.
 
 //  Enable the wifi.startsmart() and wifi.stopsmart()  
-//#define WIFI_SMART_ENABLE
+#define WIFI_SMART_ENABLE
 
 //  Enable wifi.sta.config() event callbacks
 #define WIFI_SDK_EVENT_MONITOR_ENABLE
@@ -131,7 +131,7 @@
 #define WIFI_EVENT_MONITOR_DISCONNECT_REASON_LIST_ENABLE
 
 //  Enable use of the WiFi.monitor sub-module
-//#define LUA_USE_MODULES_WIFI_MONITOR
+#define LUA_USE_MODULES_WIFI_MONITOR
 
 
 // Whilst the DNS client details can be configured through the WiFi API,
