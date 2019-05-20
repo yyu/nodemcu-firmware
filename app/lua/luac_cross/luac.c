@@ -272,7 +272,7 @@ struct Smain {
  char** argv;
 };
 
-extern uint dumpToFlashImage (lua_State* L,const Proto *main, lua_Writer w, 
+extern unsigned int dumpToFlashImage (lua_State* L,const Proto *main, lua_Writer w, 
                               void* data, int strip, 
                               lu_int32 address, lu_int32 maxSize);
 

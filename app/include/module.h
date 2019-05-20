@@ -39,7 +39,7 @@
 #define MODULE_EXPAND_PASTE_(x,y) MODULE_PASTE_(x,y)
 
 #ifdef LUA_CROSS_COMPILER
-#define LOCK_IN_SECTION(s) __attribute__((used,unused,section(".rodata1." #s)))
+#define LOCK_IN_SECTION(s) __attribute__((used,unused,section("__DATA,.rodata1." #s)))
 #else
 #define LOCK_IN_SECTION(s) __attribute__((used,unused,section(".lua_" #s)))
 #endif
